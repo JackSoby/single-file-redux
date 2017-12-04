@@ -5,9 +5,6 @@ import { createStore } from 'redux'
 class ReduxDemo extends Component {
   constructor(props) {
       super(props)
-      this.state = {
-         hello: 'hello world'
-      }
 
     }
   render(){
@@ -21,7 +18,7 @@ class ReduxDemo extends Component {
 
 
 
-    const store = createStore(reducer, this.state.hello);
+    const store = createStore(reducer, 'peace')
 
 
      store.subscribe(() =>  {
